@@ -7,5 +7,6 @@
     ~/.gitconfig: gitconfig
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
+    ~/.config/spicetify/config-xpui.ini: spicetify
 
 
