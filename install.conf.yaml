@@ -9,4 +9,5 @@
     ~/.zshrc: zshrc
     ~/.config/spicetify/config-xpui.ini: spicetify
 
-
+- shell:
+    - cp discord.theme.css ~/.var/app/com.discordapp.Discord/config/BetterDiscord/themes/discord.theme.css
