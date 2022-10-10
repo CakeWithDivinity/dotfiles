@@ -48,6 +48,10 @@ command -v exa >/dev/null && { alias l="exa -lahg --icons --octal-permissions" &
 
 alias zshrc="${=EDITOR} ~/.zshrc"
 
+# autojump
+[[ -s /usr/share/autojump/autojump.zsh ]] && source /usr/share/autojump/autojump.zsh
+
+
 # pfetch
 echo
 pfetch

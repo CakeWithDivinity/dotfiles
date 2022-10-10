@@ -10,6 +10,7 @@
     ~/.config/spicetify/config-xpui.ini: spicetify
     ~/.config/btop/btop.conf: btop
     ~/.config/spicetify/Themes/Sleek/color.ini: spicetify-color.ini
+    ~/.config/terminator/config: terminator
       
 - shell:
     - cp discord.theme.css ~/.var/app/com.discordapp.Discord/config/BetterDiscord/themes/discord.theme.css
