@@ -51,8 +51,10 @@ alias zshrc="${=EDITOR} ~/.zshrc"
 # autojump
 [[ -s /usr/share/autojump/autojump.zsh ]] && source /usr/share/autojump/autojump.zsh
 
-
 # pfetch
 echo
 pfetch
 export PATH=$PATH:/home/h.loewe/.spicetify
+
+# add fucking fuck fuck alias
+eval $(thefuck --alias)
