@@ -1,0 +1,88 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "C_Cpp.updateChannel": "Insiders",
+  "cSpell.userWords": [],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "cSpell.enabled": false,
+  "workbench.colorTheme": "Tokyo Night",
+  "yaml.schemas": {
+    "file:///home/h.loewe/.var/app/com.visualstudio.code/data/vscode/extensions/atlassian.atlascode-2.10.12/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "files.eol": "\n",
+  "sync.gist": "work",
+  "sync.autoUpload": true,
+  "window.titleBarStyle": "custom",
+  "redhat.telemetry.enabled": true,
+  "svelte.enable-ts-plugin": true,
+  "js/ts.implicitProjectConfig.checkJs": true,
+  "errorLens.padding": "2px",
+  "errorLens.borderRadius": "10px",
+  "liveServer.settings.CustomBrowser": "chrome",
+  "eslint.packageManager": "yarn",
+  "eslint.workingDirectories": [
+    "frontend"
+  ],
+  "prettier.configPath": "frontend/.prettierrc",
+  "prettier.ignorePath": "frontend/.prettierignore",
+  "php.suggest.basic": false,
+  "editor.quickSuggestions": { "comments": true },
+  "intelephense.files.exclude": [
+    "**/.git/**",
+    "**/.svn/**",
+    "**/.hg/**",
+    "**/CVS/**",
+    "**/.DS_Store/**",
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**/{Test,test,Tests,tests}/**/*Test.php"
+  ],
+  "[php]": {
+    "editor.defaultFormatter": "valeryanm.vscode-phpsab",
+    "editor.formatOnSave": true
+  },
+  "php-cs-fixer.lastDownload": 1667498488700,
+  "php-cs-fixer.config": ".php-cs-fixer.php;.php-cs-fixer.dist.php;.php_cs;.php_cs.dist;backend/phpcs.xml.dist",
+  "php-cs-fixer.executablePath": "${workspaceFolder}/backend/vendor/bin/phpcs",
+  "phpcs.composerJsonPath": "backend/composer.json",
+  "phpcs.executablePath": "backend/vendor/bin/phpcs",
+  "phpsab.executablePathCBF": "backend/vendor/bin/phpcbf",
+  "phpsab.executablePathCS": "backend/vendor/bin/phpcs",
+  "phpsab.debug": true,
+  "psalm.configPaths": [
+    "psalm.xml",
+    "psalm.xml.dist",
+    "backend/psalm.xml"
+  ],
+  "psalm.psalmScriptPath": "backend/vendor/bin/psalm-language-server",
+  "psalm.psalmScriptArgs": [
+    "--root=backend"
+  ],
+  "psalm.psalmVersion": "4.22.0",
+  "psalm.trace.server": "verbose",
+  "psalm.analyzedFileExtensions": [
+    {
+      "scheme": "file",
+      "language": "php"
+    },
+    {
+      "scheme": "untitled",
+      "language": "php"
+    }
+  ],
+  "phpunit.args": [
+    ["--configuration phpunit.xml.dist"]
+  ],
+  "phpunit.command": "docker-compose exec backend",
+  "phpunit.paths": {
+    "${workspaceFolder}": "/var/www/html"
+  },
+  "phpunit.files": "backend/tests/**/*.php",
+  "phpunit.relativeFilePath": true,
+  "phpunit.logpanel": true,
+  "phpunit.trace.server": "verbose",
+  "intelephense.diagnostics.typeErrors": false,
+  "emmet.excludeLanguages": [
+    "markdown",
+    "php"
+  ],
+}
