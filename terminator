@@ -4,6 +4,8 @@
 [profiles]
   [[default]]
     background_color = "#16161e"
+    background_darkness = 0.95
+    background_type = transparent
     cursor_color = "#aaaaaa"
     foreground_color = "#787c99"
     show_titlebar = False
