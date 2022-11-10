@@ -77,5 +77,8 @@
     "/": [406, 407, 6503],
     "frontend": true,
     "deploy.php": true
-  }
+  },
+  "phpunit.phpunit": "backend/vendor/bin/phpunit",
+  "php.executablePath": "docker-compose run backend php",
+  "errorLens.excludeBySource": ["Psalm"]
 }
