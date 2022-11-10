@@ -19,9 +19,7 @@
   "errorLens.borderRadius": "10px",
   "liveServer.settings.CustomBrowser": "chrome",
   "eslint.packageManager": "yarn",
-  "eslint.workingDirectories": [
-    "frontend"
-  ],
+  "eslint.workingDirectories": ["frontend"],
   "prettier.configPath": "frontend/.prettierrc",
   "prettier.ignorePath": "frontend/.prettierignore",
   "php.suggest.basic": false,
@@ -48,15 +46,9 @@
   "phpsab.executablePathCBF": "backend/vendor/bin/phpcbf",
   "phpsab.executablePathCS": "backend/vendor/bin/phpcs",
   "phpsab.debug": true,
-  "psalm.configPaths": [
-    "psalm.xml",
-    "psalm.xml.dist",
-    "backend/psalm.xml"
-  ],
+  "psalm.configPaths": ["psalm.xml", "psalm.xml.dist", "backend/psalm.xml"],
   "psalm.psalmScriptPath": "backend/vendor/bin/psalm-language-server",
-  "psalm.psalmScriptArgs": [
-    "--root=backend"
-  ],
+  "psalm.psalmScriptArgs": ["--root=backend"],
   "psalm.psalmVersion": "4.22.0",
   "psalm.trace.server": "verbose",
   "psalm.analyzedFileExtensions": [
@@ -69,9 +61,7 @@
       "language": "php"
     }
   ],
-  "phpunit.args": [
-    ["--configuration phpunit.xml.dist"]
-  ],
+  "phpunit.args": [["--configuration phpunit.xml.dist"]],
   "phpunit.command": "docker-compose exec backend",
   "phpunit.paths": {
     "${workspaceFolder}": "/var/www/html"
@@ -80,9 +70,12 @@
   "phpunit.relativeFilePath": true,
   "phpunit.logpanel": true,
   "phpunit.trace.server": "verbose",
-  "intelephense.diagnostics.typeErrors": false,
-  "emmet.excludeLanguages": [
-    "markdown",
-    "php"
-  ],
+  "emmet.excludeLanguages": ["markdown", "php"],
+  "php.problems.exclude": {
+    "backend/var": true,
+    "backend/vendor": true,
+    "/": [406, 407, 6503],
+    "frontend": true,
+    "deploy.php": true
+  }
 }
