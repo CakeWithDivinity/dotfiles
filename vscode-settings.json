@@ -1,47 +1,43 @@
 {
-  "workbench.iconTheme": "material-icon-theme",
-  "C_Cpp.updateChannel": "Insiders",
-  "cSpell.userWords": [],
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "cSpell.enabled": false,
-  "workbench.colorTheme": "Tokyo Night",
-  "yaml.schemas": {
-    "file:///home/h.loewe/.var/app/com.visualstudio.code/data/vscode/extensions/atlassian.atlascode-2.10.12/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-  },
+  // <------------------- Editor setings ------------------->
   "files.eol": "\n",
-  "sync.gist": "work",
-  "sync.autoUpload": true,
-  "window.titleBarStyle": "custom",
-  "redhat.telemetry.enabled": true,
-  "svelte.enable-ts-plugin": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.stickyScroll.enabled": true,
-  "js/ts.implicitProjectConfig.checkJs": true,
+  "editor.quickSuggestions": { "comments": true },
+  "window.titleBarStyle": "custom",
+  "emmet.excludeLanguages": ["markdown", "php"],
+  "liveServer.settings.CustomBrowser": "chrome",
+
+  // <------------------ Appearance ------------------>
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Tokyo Night",
   "errorLens.padding": "2px",
   "errorLens.borderRadius": "10px",
-  "liveServer.settings.CustomBrowser": "chrome",
+  "errorLens.excludeBySource": ["Psalm"],
+  "indentRainbow.colors": [
+    "rgba(255,255,64,0.04)",
+    "rgba(127,255,127,0.04)",
+    "rgba(255,127,255,0.04)",
+    "rgba(79,236,236,0.04)"
+  ],
+
+  // <------------------ CSpell (bad) ----------------->
+  "cSpell.userWords": [],
+  "cSpell.enabled": false,
+  
+  // <------------------ JS/TS ------------------------>
+  "svelte.enable-ts-plugin": true,
+  "js/ts.implicitProjectConfig.checkJs": true,
   "eslint.packageManager": "yarn",
   "eslint.workingDirectories": ["frontend"],
   "prettier.configPath": "frontend/.prettierrc",
   "prettier.ignorePath": "frontend/.prettierignore",
-  "php.suggest.basic": false,
-  "editor.quickSuggestions": { "comments": true },
-  "intelephense.files.exclude": [
-    "**/.git/**",
-    "**/.svn/**",
-    "**/.hg/**",
-    "**/CVS/**",
-    "**/.DS_Store/**",
-    "**/node_modules/**",
-    "**/bower_components/**",
-    "**/vendor/**/{Test,test,Tests,tests}/**/*Test.php"
-  ],
+  
+  // <------------------ PHP -------------------------->
   "[php]": {
     "editor.defaultFormatter": "valeryanm.vscode-phpsab",
     "editor.formatOnSave": true
   },
-  "php-cs-fixer.lastDownload": 1667498488700,
-  "php-cs-fixer.config": ".php-cs-fixer.php;.php-cs-fixer.dist.php;.php_cs;.php_cs.dist;backend/phpcs.xml.dist",
-  "php-cs-fixer.executablePath": "${workspaceFolder}/backend/vendor/bin/phpcs",
   "phpcs.composerJsonPath": "backend/composer.json",
   "phpcs.executablePath": "backend/vendor/bin/phpcs",
   "phpsab.executablePathCBF": "backend/vendor/bin/phpcbf",
@@ -71,7 +67,6 @@
   "phpunit.relativeFilePath": true,
   "phpunit.logpanel": true,
   "phpunit.trace.server": "verbose",
-  "emmet.excludeLanguages": ["markdown", "php"],
   "php.problems.exclude": {
     "backend/var": true,
     "backend/vendor": true,
@@ -81,11 +76,7 @@
   },
   "phpunit.phpunit": "backend/vendor/bin/phpunit",
   "php.executablePath": "docker-compose run backend php",
-  "errorLens.excludeBySource": ["Psalm"],
-  "indentRainbow.colors": [
-    "rgba(255,255,64,0.04)",
-    "rgba(127,255,127,0.04)",
-    "rgba(255,127,255,0.04)",
-    "rgba(79,236,236,0.04)"
-  ]
+
+  // <---------------- Other Foo ------------------------>
+  "redhat.telemetry.enabled": false,
 }
