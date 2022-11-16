@@ -4,9 +4,9 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.stickyScroll.enabled": true,
   "editor.quickSuggestions": { "comments": true },
+  "editor.cursorSmoothCaretAnimation": false,
   "window.titleBarStyle": "custom",
   "emmet.excludeLanguages": ["markdown", "php"],
-  "liveServer.settings.CustomBrowser": "chrome",
 
   // <------------------ Appearance ------------------>
   "workbench.iconTheme": "material-icon-theme",
