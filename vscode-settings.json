@@ -6,11 +6,14 @@
   "editor.quickSuggestions": { "comments": true },
   "editor.cursorSmoothCaretAnimation": false,
   "window.titleBarStyle": "custom",
-  "emmet.excludeLanguages": ["markdown", "php"],
+  "emmet.excludeLanguages": [
+    "markdown",
+    "php",
+    "html"
+  ],
 
   // <------------------ Appearance ------------------>
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Tokyo Night",
   "errorLens.padding": "2px",
   "errorLens.borderRadius": "10px",
   "errorLens.excludeBySource": ["Psalm"],
@@ -42,7 +45,6 @@
   "phpcs.executablePath": "backend/vendor/bin/phpcs",
   "phpsab.executablePathCBF": "backend/vendor/bin/phpcbf",
   "phpsab.executablePathCS": "backend/vendor/bin/phpcs",
-  "phpsab.debug": true,
   "psalm.configPaths": ["psalm.xml", "psalm.xml.dist", "backend/psalm.xml"],
   "psalm.psalmScriptPath": "backend/vendor/bin/psalm-language-server",
   "psalm.psalmScriptArgs": ["--root=backend"],
@@ -70,13 +72,18 @@
   "php.problems.exclude": {
     "backend/var": true,
     "backend/vendor": true,
-    "/": [406, 407, 6503],
+    "/": [406, 407, 6503, "0413"],
     "frontend": true,
     "deploy.php": true
   },
   "phpunit.phpunit": "backend/vendor/bin/phpunit",
-  "php.executablePath": "docker-compose run backend php",
+  "php.executablePath": "php",
 
   // <---------------- Other Foo ------------------------>
   "redhat.telemetry.enabled": false,
+  "codesnap.showWindowControls": false,
+  "workbench.colorTheme": "Tokyo Night",
+  "phpsab.composerJsonPath": "backend/composer.json",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }

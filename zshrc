@@ -54,7 +54,7 @@ alias zshrc="${=EDITOR} ~/.zshrc"
 # pfetch
 echo
 pfetch
-export PATH=$PATH:/home/h.loewe/.spicetify
+export PATH=$PATH:/home/h.loewe/.spicetify:/home/h.loewe/.cargo/bin
 
 # add fucking fuck fuck alias
 eval $(thefuck --alias)
