@@ -13,6 +13,8 @@ local function format()
         dockerls = true,
     }
 
+    vim.cmd('Prettier')
+
     vim.lsp.buf.format {
         filter = function(client)
             -- Disable formatting for some language servers
