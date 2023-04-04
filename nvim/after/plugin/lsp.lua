@@ -1,4 +1,5 @@
 local lsp = require('lsp-zero')
+local util = require 'lspconfig.util'
 
 local function format()
     local disabled_formatter = {
@@ -32,6 +33,7 @@ local function format()
                 then
                     has_other_formatter = true
                 end
+                print(lsp.name)
             end
             if has_other_formatter then return false end
             return true
@@ -48,6 +50,8 @@ lsp.ensure_installed({
 	'angularls',
 	'cssls',
 	'rust_analyzer',
+    'intelephense',
+    'psalm'
 })
 
 local cmp = require('cmp')
@@ -61,20 +65,8 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
 
 vim.keymap.set("n", "<leader>lf", format);
 
-local function merge_opts(new_opts)
-	return vim.tbl_deep_extend("force", new_opts, default_opts)
-end
-
-local function with_settings(settings)
-	return merge_opts({
-		settings = settings,
-	})
-end
-
-require("lspconfig").rust_analyzer.setup(with_settings({
-	["rust-analyzer"] = {
-		checkOnSave = { command = "clippy" },
-	},
-}))
+require'lspconfig'.psalm.setup{
+    root_dir = util.root_pattern("psalm.xml", "psalm.xml.dist", "backend/psalm.xml")
+}
 
 lsp.setup()
