@@ -26,4 +26,6 @@ vim.opt.scrolloff = 8
 
 vim.opt.colorcolumn = "80"
 
+vim.opt.updatetime = 300
+
 vim.cmd([[ au TextYankPost * silent! lua vim.highlight.on_yank() ]])

@@ -61,4 +61,20 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
 
 vim.keymap.set("n", "<leader>lf", format);
 
+local function merge_opts(new_opts)
+	return vim.tbl_deep_extend("force", new_opts, default_opts)
+end
+
+local function with_settings(settings)
+	return merge_opts({
+		settings = settings,
+	})
+end
+
+require("lspconfig").rust_analyzer.setup(with_settings({
+	["rust-analyzer"] = {
+		checkOnSave = { command = "clippy" },
+	},
+}))
+
 lsp.setup()

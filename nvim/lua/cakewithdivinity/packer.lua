@@ -72,4 +72,6 @@ return require('packer').startup(function(use)
   use {
       'prettier/vim-prettier'
   }
+
+  use 'psliwka/vim-smoothie'
 end)
