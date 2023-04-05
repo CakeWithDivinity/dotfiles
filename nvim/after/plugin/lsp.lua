@@ -41,6 +41,15 @@ local function format()
     }
 end
 
+local function organize_imports()
+  local params = {
+    command = "_typescript.organizeImports",
+    arguments = {vim.api.nvim_buf_get_name(0)},
+    title = ""
+  }
+  vim.lsp.buf.execute_command(params)
+end
+
 lsp.preset('recommended')
 
 lsp.ensure_installed({
@@ -64,6 +73,7 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
 })
 
 vim.keymap.set("n", "<leader>lf", format);
+vim.keymap.set("n", "<leader>lo", organize_imports);
 
 require'lspconfig'.psalm.setup{
     root_dir = util.root_pattern("psalm.xml", "psalm.xml.dist", "backend/psalm.xml")
