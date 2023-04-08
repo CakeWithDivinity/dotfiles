@@ -74,4 +74,6 @@ return require('packer').startup(function(use)
   }
 
   use 'psliwka/vim-smoothie'
+
+  use 'windwp/nvim-ts-autotag'
 end)

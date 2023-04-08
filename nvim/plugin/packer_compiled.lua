@@ -159,6 +159,11 @@ _G.packer_plugins = {
     path = "/home/h.loewe/.local/share/nvim/site/pack/packer/start/nvim-treesitter-context",
     url = "https://github.com/nvim-treesitter/nvim-treesitter-context"
   },
+  ["nvim-ts-autotag"] = {
+    loaded = true,
+    path = "/home/h.loewe/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
+    url = "https://github.com/windwp/nvim-ts-autotag"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/h.loewe/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
