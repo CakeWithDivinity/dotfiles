@@ -14,6 +14,7 @@
     # this assumes you use flatpak
     ~/.var/app/com.visualstudio.code/config/Code/User/settings.json: vscode-settings.json
     ~/.config/nvim: nvim
+    ~/.wezterm.lua: .wezterm.lua
 
 - shell:
     - cp discord.theme.css ~/.var/app/com.discordapp.Discord/config/BetterDiscord/themes/discord.theme.css
