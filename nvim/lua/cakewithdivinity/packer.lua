@@ -73,7 +73,5 @@ return require('packer').startup(function(use)
       'prettier/vim-prettier'
   }
 
-  use 'psliwka/vim-smoothie'
-
   use 'windwp/nvim-ts-autotag'
 end)
