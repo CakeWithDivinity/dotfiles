@@ -81,4 +81,6 @@ return require('packer').startup(function(use)
       require('goto-preview').setup {}
     end
   }
+
+  use 'andweeb/presence.nvim'
 end)
