@@ -27,6 +27,6 @@ home_config           = 1
 
 ; DO NOT CHANGE!
 [Backup]
-version = 1.1.84.716.gc5f8b819
+version = 1.2.11.916.geb595a67
 with    = 2.13.1
 
