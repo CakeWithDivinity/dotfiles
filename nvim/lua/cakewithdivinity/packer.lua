@@ -83,4 +83,6 @@ return require('packer').startup(function(use)
   }
 
   use 'andweeb/presence.nvim'
+
+  use 'github/copilot.vim'
 end)
