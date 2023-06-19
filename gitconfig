@@ -1,3 +1,10 @@
 [user]
 	name = hendrik.loewe
 	email = hendrikloewe3@gmail.com
+  signingkey = hendrikloewe3@gmail.com
+
+[commit]
+  gpgsign = true
+
+[tag]
+  gpgSign = true
