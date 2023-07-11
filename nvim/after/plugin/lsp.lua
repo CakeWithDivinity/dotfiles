@@ -59,8 +59,6 @@ lsp.ensure_installed({
 	'angularls',
 	'cssls',
 	'rust_analyzer',
-    'intelephense',
-    'psalm'
 })
 
 local cmp = require('cmp')
@@ -84,6 +82,13 @@ vim.keymap.set("n", "<leader>lo", organize_imports);
 
 require'lspconfig'.psalm.setup{
     root_dir = util.root_pattern("psalm.xml", "psalm.xml.dist", "backend/psalm.xml")
+}
+
+require'lspconfig'.typst_lsp.setup{
+    settings = {
+        exportPdf = "onType" -- Choose onType, onSave or never.
+        -- serverPath = "" -- Normally, there is no need to uncomment it.
+    }
 }
 
 lsp.setup()

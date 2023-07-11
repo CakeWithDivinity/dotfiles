@@ -85,4 +85,6 @@ return require('packer').startup(function(use)
   use 'andweeb/presence.nvim'
 
   use 'github/copilot.vim'
+
+  use 'kaarmu/typst.vim'
 end)
