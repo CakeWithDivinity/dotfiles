@@ -48,6 +48,7 @@ return require('packer').startup(function(use)
       { 'rafamadriz/friendly-snippets' }, -- Optional
     }
   }
+  use 'jose-elias-alvarez/null-ls.nvim'
 
   use {
     "folke/trouble.nvim",
@@ -67,10 +68,6 @@ return require('packer').startup(function(use)
 
   use {
     'lewis6991/gitsigns.nvim',
-  }
-
-  use {
-    'prettier/vim-prettier'
   }
 
   use 'windwp/nvim-ts-autotag'
