@@ -4,12 +4,13 @@
 replace_colors          = 1
 overwrite_assets        = 0
 spotify_path            = /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify/
-prefs_path              = /home/h.loewe/.var/app/com.spotify.Client/config/spotify/prefs
+prefs_path              = /home/hloewe/.var/app/com.spotify.Client/config/spotify/prefs
 current_theme           = Sleek
 color_scheme            = CakeWithDivinity
 inject_css              = 1
 spotify_launch_flags    = 
 check_spicetify_upgrade = 0
+inject_theme_js         = 1
 
 [Preprocesses]
 disable_ui_logging    = 1
@@ -29,4 +30,3 @@ home_config           = 1
 [Backup]
 version = 1.2.11.916.geb595a67
 with    = 2.13.1
-

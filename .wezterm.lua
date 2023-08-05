@@ -15,8 +15,9 @@ end
 -- For example, changing the color scheme:
 config.color_scheme = 'Tokyo Night (Gogh)'
 config.hide_tab_bar_if_only_one_tab = true
+config.enable_wayland = true
 
-config.window_background_image = '/home/h.loewe/Pictures/Wallpaper/butterfly.jpg'
+config.window_background_image = '/home/hloewe/Pictures/Wallpaper/butterfly.jpg'
 config.window_background_image_hsb = {
   brightness = 0.01,
   hue = 1,
@@ -64,7 +65,6 @@ config.keys = {
 };
 
 config.font = wezterm.font('JetBrains Mono', {})
-config.enable_wayland = true
 
 -- and finally, return the configuration to wezterm
 return config

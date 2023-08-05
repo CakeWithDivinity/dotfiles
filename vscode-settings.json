@@ -4,7 +4,7 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.stickyScroll.enabled": true,
   "editor.quickSuggestions": { "comments": true },
-  "editor.cursorSmoothCaretAnimation": false,
+  "editor.cursorSmoothCaretAnimation": "off",
   "window.titleBarStyle": "custom",
   "emmet.excludeLanguages": [
     "markdown",
@@ -26,7 +26,7 @@
 
   // <------------------ CSpell (bad) ----------------->
   "cSpell.userWords": [],
-  "cSpell.enabled": false,
+  "cSpell.enabled": true,
   
   // <------------------ JS/TS ------------------------>
   "svelte.enable-ts-plugin": true,
