@@ -3,6 +3,9 @@ return {
     "haydenmeade/neotest-jest",
   },
   {
+    "marilari88/neotest-vitest",
+  },
+  {
     "nvim-neotest/neotest",
     dependencies = { "haydenmeade/neotest-jest" },
     opts = {
@@ -15,6 +18,7 @@ return {
             return vim.fn.getcwd()
           end,
         },
+        ["neotest-vitest"] = {},
       },
     },
   },
