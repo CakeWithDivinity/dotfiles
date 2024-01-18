@@ -15,7 +15,7 @@
     ~/.var/app/com.visualstudio.code/config/Code/User/settings.json: vscode-settings.json
     ~/.config/nvim: nvim
     ~/.wezterm.lua: .wezterm.lua
-    ~/.config/alacritty/alacritty.yml: alacritty.yml
+    ~/.config/alacritty/alacritty.toml: alacritty.toml
 
 - shell:
     - cp discord.theme.css ~/.var/app/com.discordapp.Discord/config/BetterDiscord/themes/discord.theme.css
