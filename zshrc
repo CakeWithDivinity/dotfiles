@@ -44,7 +44,7 @@ SAVEHIST=50001
 
 export EDITOR='nvim'
 
-command -v exa >/dev/null && { alias l="exa -lahg --icons --octal-permissions" && alias ll="exa -lhg --icons --octal-permissions" }
+command -v eza >/dev/null && { alias l="eza -lahg --icons --octal-permissions" && alias ll="eza -lhg --icons --octal-permissions" }
 
 alias zshrc="${=EDITOR} ~/.zshrc"
 
