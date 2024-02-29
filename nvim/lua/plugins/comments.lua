@@ -16,10 +16,10 @@ return {
         mappings = {
           -- Toggle comment (like `gcip` - comment inner paragraph) for both
           -- Normal and Visual modes
-          comment = "<leader>cc",
+          comment = "<leader>gc",
 
           -- Toggle comment on current line
-          comment_line = "<leader>cc",
+          comment_line = "<leader>gc",
         },
       },
     },
