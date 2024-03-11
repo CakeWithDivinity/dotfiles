@@ -55,6 +55,13 @@ alias zshrc="${=EDITOR} ~/.zshrc"
 echo
 pfetch
 export PATH=$PATH:/home/h.loewe/.spicetify:/home/h.loewe/.cargo/bin
+export NODE_EXTRA_CA_CERTS=/home/hloewe/roots.pem
 
 # add fucking fuck fuck alias
-eval $(thefuck --alias)
+# eval $(thefuck --alias)
+
+command -v nvm >/dev/null && {
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+}
