@@ -1,89 +1,77 @@
 {
-  // <------------------- Editor setings ------------------->
-  "files.eol": "\n",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.stickyScroll.enabled": true,
-  "editor.quickSuggestions": { "comments": true },
-  "editor.cursorSmoothCaretAnimation": "off",
-  "window.titleBarStyle": "custom",
-  "emmet.excludeLanguages": [
-    "markdown",
-    "php",
-    "html"
-  ],
-
-  // <------------------ Appearance ------------------>
-  "workbench.iconTheme": "material-icon-theme",
-  "errorLens.padding": "2px",
-  "errorLens.borderRadius": "10px",
-  "errorLens.excludeBySource": ["Psalm"],
-  "indentRainbow.colors": [
-    "rgba(255,255,64,0.04)",
-    "rgba(127,255,127,0.04)",
-    "rgba(255,127,255,0.04)",
-    "rgba(79,236,236,0.04)"
-  ],
-
-  // <------------------ CSpell (bad) ----------------->
-  "cSpell.userWords": [],
-  "cSpell.enabled": true,
-  
-  // <------------------ JS/TS ------------------------>
-  "svelte.enable-ts-plugin": true,
-  "js/ts.implicitProjectConfig.checkJs": true,
-  "eslint.packageManager": "yarn",
-  "eslint.workingDirectories": ["frontend"],
-  "prettier.configPath": "frontend/.prettierrc",
-  "prettier.ignorePath": "frontend/.prettierignore",
-  
-  // <------------------ PHP -------------------------->
-  "[php]": {
-    "editor.defaultFormatter": "valeryanm.vscode-phpsab",
-    "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "workbench.colorTheme": "Tokyo Night",
+  "vim.smartRelativeLine": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "vim.surround": true,
+  "vim.handleKeys": {
+    "<C-d>": true,
+    "<C-s>": false,
+    "<C-z>": false
   },
-  "phpcs.composerJsonPath": "backend/composer.json",
-  "phpcs.executablePath": "backend/vendor/bin/phpcs",
-  "phpsab.executablePathCBF": "backend/vendor/bin/phpcbf",
-  "phpsab.executablePathCS": "backend/vendor/bin/phpcs",
-  "psalm.configPaths": ["psalm.xml", "psalm.xml.dist", "backend/psalm.xml"],
-  "psalm.psalmScriptPath": "backend/vendor/bin/psalm-language-server",
-  "psalm.psalmScriptArgs": ["--root=backend"],
-  "psalm.psalmVersion": "4.22.0",
-  "psalm.trace.server": "verbose",
-  "psalm.analyzedFileExtensions": [
+  "vim.normalModeKeyBindings": [
+    { "before": ["C-d"], "after": ["C-d", "z", "z"] },
+    { "before": ["C-u"], "after": ["C-u", "z", "z"] },
+    { "before": ["C-\\"], "commands": ["workbench.action.splitEditor"] },
+    { "before": ["L"], "commands": ["workbench.action.nextEditor"] },
+    { "before": ["H"], "commands": ["workbench.action.previousEditor"] },
+    { "before": ["K"], "commands": ["editor.action.showHover"] },
     {
-      "scheme": "file",
-      "language": "php"
+      "before": ["<leader>", "c", "f"],
+      "commands": ["editor.action.formatDocument"]
+    },
+    { "before": ["<leader>", "c", "r"], "commands": ["editor.action.rename"] },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
     },
     {
-      "scheme": "untitled",
-      "language": "php"
+      "before": ["<leader>", "g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["<leader>", "g", "d"],
+      "commands": ["editor.action.revealDefinition"]
+    },
+    {
+      "before": ["<leader>", "g", "t"],
+      "commands": ["workbench.action.terminal.toggleTerminal"]
+    },
+    {
+      "before": ["<leader>", "b", "d"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["<leader>", "<leader>"],
+      "commands": ["workbench.action.quickOpen"]
     }
   ],
-  "phpunit.args": [["--configuration phpunit.xml.dist"]],
-  "phpunit.command": "docker-compose exec backend",
-  "phpunit.paths": {
-    "${workspaceFolder}": "/var/www/html"
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    }
+  ],
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
   },
-  "phpunit.files": "backend/tests/**/*.php",
-  "phpunit.relativeFilePath": true,
-  "phpunit.logpanel": true,
-  "phpunit.trace.server": "verbose",
-  "php.problems.exclude": {
-    "backend/var": true,
-    "backend/vendor": true,
-    "/": [406, 407, 6503, "0413"],
-    "frontend": true,
-    "deploy.php": true
-  },
-  "phpunit.phpunit": "backend/vendor/bin/phpunit",
-  "php.executablePath": "php",
-
-  // <---------------- Other Foo ------------------------>
-  "redhat.telemetry.enabled": false,
-  "codesnap.showWindowControls": false,
-  "workbench.colorTheme": "Tokyo Night",
-  "phpsab.composerJsonPath": "backend/composer.json",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "indentRainbow.colors": [
+    "rgba(255,255,64,0.02)",
+    "rgba(127,255,127,0.02)",
+    "rgba(255,127,255,0.02)",
+    "rgba(79,236,236,0.02)"
+  ],
+  "workbench.iconTheme": "material-icon-theme",
+  "svelte.enable-ts-plugin": true,
+  "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Mono",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
