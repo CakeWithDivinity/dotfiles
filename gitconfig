@@ -1,14 +1,13 @@
 [user]
-	name = hendrik.loewe
+	name = Hendrik Loewe
 	email = hendrikloewe3@gmail.com
-  signingkey = hendrikloewe3@gmail.com
+        signingkey = 1AD026921D9D0E9712C12C2D543EB436096E43F0
 
 [commit]
-  gpgsign = true
+	gpgsign = true
 
 [tag]
-  gpgSign = true
-[url "git@github.com:"]
-	insteadOf = https://github.com/
+        gpgSign = true
+
 [init]
 	defaultBranch = main

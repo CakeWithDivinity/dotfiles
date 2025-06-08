@@ -47,6 +47,11 @@ export EDITOR='nvim'
 command -v eza >/dev/null && { alias l="eza -lahg --icons --octal-permissions" && alias ll="eza -lhg --icons --octal-permissions" }
 
 alias zshrc="${=EDITOR} ~/.zshrc"
+alias vim="nvim"
+
+pw() {
+    rbw get "$1" | clipcopy
+}
 
 # autojump
 [[ -s /usr/share/autojump/autojump.zsh ]] && source /usr/share/autojump/autojump.zsh
@@ -65,3 +70,5 @@ command -v nvm >/dev/null && {
   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
   [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 }
+
+eval "$(starship init zsh)"

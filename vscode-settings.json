@@ -73,5 +73,41 @@
   "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Mono",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "jest.runMode": "on-demand",
+  "emmet.showAbbreviationSuggestions": false,
+  "emmet.showExpandedAbbreviation": "never",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.snippetSuggestions": "none",
+  "editor.suggest.preview": true,
+  "editor.suggest.filterGraceful": false,
+  "editor.suggest.localityBonus": true,
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "typescript.preferences.importModuleSpecifier": "project-relative",
+  "typescript.preferences.importModuleSpecifierEnding": "minimal",
+  "typescript.preferences.importModuleSpecifierPreference": {
+    "**/public-api.ts": "relative"
+  },
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.autoImportFileExcludePatterns": [
+    "**/public-api.ts"
+  ],
+  "editor.inlayHints.enabled": "off",
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
   }
 }
